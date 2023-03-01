@@ -47,8 +47,18 @@ html {
 }
 
 /* CUSTOM CSS */
+:root {
+  --brand-accent-light: #E4EFDE;
+  --brand-accent-medium: #D0F8AB;
+  --brand-accent-deep: #85E13A;
+  --brand-accent-dark: #3F621A;
+  --brand-black: #111927;
+  --brand-white: #F9FAFB;
+}
+
 * {
   font-size: 10px;
+  color: var(--brand-black);
 }
 
 .main {
@@ -58,7 +68,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: var(--brand-accent-light);
   row-gap: 4em;
 }
 
@@ -66,7 +76,37 @@ h1 {
   font-size: 1.8em;
 }
 h2 {
-  font-size: 4.8em;
+  font-size: 7.2em;
+}
+
+.card {
+  width: 100%;
+  max-width: 48em;
+}
+
+.card-image-wrapper, .card-body-content {
+  background-color: var(--brand-white);
+  border-radius: 2.4em;
+  box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.05);
+}
+
+.card-image-wrapper {
+  padding: 1.2em;
+  margin-bottom: 1.6em;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 1.6em;
+  aspect-ratio: 4/2.5;
+  object-fit: cover;
+}
+
+.card-body-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6.4em;
+  padding: 8em;
 }
 
 .content-box {
@@ -78,20 +118,30 @@ h2 {
 }
 
 button {
-  padding: 1em 1.6em;
-  border-radius: 1.6em;
-  border: 0;
+  width: 4em;
+  height: 4em;
+  border-radius: 10em;
+  border: 1px solid var(--brand-black);
+  color: var(--brand-black);
   font-size: 1.6em;
   font-weight: medium;
   cursor: pointer;
 }
 
 #increment-btn {
-  background-color: black;
-  color: white;
+  background-color: var(--brand-black);
+  color: var(--brand-white);
 }
 
 #save-btn {
-  background-color: darkgreen;
-  color: white;
+  background-color: var(--brand-accent-medium);
+  color: var(--brand-accent-dark);
+  border-color: var(--brand-accent-deep);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.6em;
 }
