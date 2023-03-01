@@ -1,7 +1,11 @@
-let defaultCount = 0;
+let passtCount = 0;
 let count = document.getElementById("counter");
 
 let increment = function () {
-	defaultCount = defaultCount + 1;
-	count.innerText = defaultCount;
+	passtCount = passtCount + 1;
+	count.innerText = passtCount;
+};
+
+let save = function () {
+	console.log(passtCount);
 };
