@@ -48,11 +48,8 @@ html {
 
 /* CUSTOM CSS */
 :root {
-  --brand-accent-light: #E4EFDE;
-  --brand-accent-medium: #D0F8AB;
-  --brand-accent-deep: #85E13A;
-  --brand-accent-dark: #3F621A;
-  --brand-black: #111927;
+  --brand-accent-light: #E8F9EF;
+  --brand-accent-dark: #21513B;
   --brand-white: #F9FAFB;
 }
 
@@ -121,22 +118,22 @@ button {
   width: 4em;
   height: 4em;
   border-radius: 10em;
-  border: 1px solid var(--brand-black);
-  color: var(--brand-black);
+  border: 1px solid var(--brand-accent-dark);
+  color: var(--brand-accent-dark);
   font-size: 1.6em;
   font-weight: medium;
   cursor: pointer;
 }
 
 #increment-btn {
-  background-color: var(--brand-black);
+  background-color: var(--brand-accent-dark);
   color: var(--brand-white);
 }
 
 #save-btn {
-  background-color: var(--brand-accent-medium);
+  background-color: var(--brand-white);
   color: var(--brand-accent-dark);
-  border-color: var(--brand-accent-deep);
+  border-color: var(--brand-accent-dark);
 }
 
 .button-group {
