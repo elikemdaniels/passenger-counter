@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="./css/theme.css">
   <title>Passenger Counter</title>
 </head>
 <body>
   <main class="main">
-    <div class="content-box">
-      <h1>People entered</h1>
-      <h2 id="counter">0</h2>
+   <div class="card">
+    <div class="card-image-wrapper">
+      <figure>
+        <img class="card-image" src="./assets/passenger-bus.jpg" alt="A green forest">
+      </figure>
     </div>
-    <div class="content-box">
-      <button id="increment-btn" onclick="increment()">Increment</button>
-      <button id="save-btn">Save</button>
+    <div class="card-body-content">
+      <div class="content-box">
+        <h1>Passengers Onboard</h1>
+        <h2 id="counter">0</h2>
+      </div>
+      <div class="button-group">
+        <button id="increment-btn" onclick="increment()">+</button>
+        <button id="save-btn">-</button>
+      </div>
     </div>
+   </div>
   </main>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
